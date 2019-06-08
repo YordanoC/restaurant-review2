@@ -1,1 +1,20 @@
 // Specific CSS for your home-page
+@import "components/search";
+@import "components/cards-grid-3";
+@import "components/comment-ça-marche";
+@import "components/restaurants-internationaux";
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size:32px;
+  color:rgb(88, 148, 66);
+}
+.img-header{
+  padding-top:20px;
+  padding-left:20px;
+}
+
+.comment-ça-marche {
+  padding:20px;
+}

@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Restaurant.create(name:"Chez Françoise",country:"Portugal", address: "14 rue valiton,clichy",city:"Paris",description: "un restaurant de la cuisine française", category: "française", stars: 5,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 45)
+ Restaurant.create(name:"Pitalla",country:"France",address: "Aérogare des invalides",city:"Paris",description: "un restaurant de la cuisine indienne", category: "indienne", stars: 3,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 50)
+ Restaurant.create(name:"Havana café",country:"France", address: "1 place de d'italie, paris",city:"Paris",description: "un restaurant de la cuisine cubaine", category: "cubaine", stars: 4,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 45)
+ Restaurant.create(name:"la piedra",country:"Cuba", address: "23 avenue de la republique",city:"Paris",description: "un restaurant de la cuisine française", category: "portugal", stars: 5,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 45)
+ Restaurant.create(name:"Pitalla",country:"France",address: "14 avenue chandon, gennevilliers",city:"Paris",description: "un restaurant de la cuisine indienne", category: "indienne", stars: 3,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 45)
+ Restaurant.create(name:"Havana café",country:"France", address: "14 place de d'italie",city:"Paris",description: "un restaurant de la cuisine cubaine", category: "argerie", stars: 4,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 65)
+ Restaurant.create(name:"Chez Françoise",country:"Cuba", address: "14 rue valiton,clichy",city:"Paris",description: "un restaurant de la cuisine française", category: "française", stars: 5,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 75)
+ Restaurant.create(name:"Pitalla",country:"France",address: "Aérogare des invalides",city:"Paris",description: "un restaurant de la cuisine indienne", category: "argentine", stars: 3,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 95)
+ Restaurant.create(name:"Havana café",country:"Portugal", address: "14 place de d'italie",city:"Paris",description: "un restaurant de la cuisine cubaine", category: "canadienne", stars: 4,photo: "https://u.tfstatic.com/restaurant_photos/249/6249/169/612/Terrasse-du-restaurant.jpg",price_avg: 85)
+ # curl -H "user-key:d4c0cc308f7033ff4644976d897bb815" https://developers.zomato.com/api/v2.1/cities\?q\=Denver

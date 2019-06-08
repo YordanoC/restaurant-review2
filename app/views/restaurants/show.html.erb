@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row ">
+    <div class="col-lg-8 col-md-6 d-flex justify-content-center">
+      <div>
+      <div class="row justify-content-around m-3">
+        <div class="col-lg-4 col-md-4">
+          <h1><%= @restaurant.name %></h1>
+        </div>
+        <div class="col-lg-2 col-md-2">
+          <h1><%=@restaurant.stars %><small>/5</small></h1>
+        </div>
+      </div>
+        <p><%= @restaurant.country %></p>
+        <p><%= @restaurant.city %></p>
+        <p> <%= @restaurant.address %></p>
+        <%= image_tag @restaurant.photo, alt: "@restaurant.name", width: 200 %>
+        <%= link_to "Retour",restaurants_path %>
+      </div>
+    </div>
+  </div>
+</div>

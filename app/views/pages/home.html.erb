@@ -1,2 +1,80 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center" style="background-color:white">
+      <img class="img-header" src="https://s1.1zoom.me/big0/904/Fast_food_Pizza_White_487820.jpg" height="250" alt="">
+    <div class="col-lg-6 col-md-6 m-5 d-flex justify-content-end slogan-header">
+      <h1 class="pt-4">Découvrez & Réservez<br>
+les meilleurs restaurants au meilleur prix</h1>
+    </div>
+    <div class="col-lg-10 col-md-10 m-1 d-flex justify-content-center slogan-header">
+    <%= render "shared/search" %>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="cards col-lg-10 col-md-10">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://worldoftravel.co/wp-content/uploads/My_World_Paris_59079f6834a4f50d46219cca.jpeg)">
+    Paris
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://1.bp.blogspot.com/-2c6P3w1-YSY/WRtocdZeHiI/AAAAAAAAC_Y/pcgGFH7O6KoxFcoDidsaGzcBdWRZ8p9qwCLcB/s1600/place%2Bdes%2Bterreaux.jpg)">
+    Lyon
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://chouetteworld.com/wp-content/uploads/2017/09/DSC07875.jpg)">
+    Strasbourg
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(http://images2.fanpop.com/image/photos/8600000/Lille-france-8614403-800-572.jpg)">
+    Lille
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(http://www.agencefranc.com/wp-content/uploads/2017/06/bx_miroir-deau.jpg)">
+    Bordeaux
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://voyages.photo/wp-content/uploads/2017/09/photo-paysage-marseille-16.jpg)">
+    Marseille
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(http://www.posepartagemedia.com/images/ctrb/img_7548.jpg)">
+    Toulouse
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(http://www.whataboutnice.fr/wp-content/uploads/2015/10/cours-pilates-promenade-anglais.jpg)">
+    Nice
+    </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://4.bp.blogspot.com/-EX-drRlk_Kg/VCbbKjkGJzI/AAAAAAAAKU4/eI3YRY91q3s/s1600/City%2BSquare%2C%2BNantes.%2BPhotograph%2Bcourtesy%2Bof%2Bshaindlin.%2B5000937631_ca1e44df9e.jpg)">
+      Nantes
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+   <div class="row d-flex justify-content-center">
+    <h1 style="margin-top: 20px">Comment ça marche</h1>
+    <div class="comment-ça-marche col-lg-10 col-md-10">
+      <div class="marche"><%= image_tag "map.png", alt: "Le Wagon", width: 100 %>
+        <h2>Découvrez</h2>
+        <p>les restaurants les mieux notés de chaque quartier</p>
+      </div>
+      <div class="marche"><%= image_tag "calendar.png", alt: "Le Wagon", width: 100 %>
+        <h2>Réservez</h2>
+        <p>directement selon vos envies</p>
+      </div>
+      <div class="marche"><%= image_tag "gift.png", alt: "Le Wagon", width: 100 %>
+        <h2>Bénéficiez</h2>
+        <p>d'offres exclusives jusqu'à -50%</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container container-restaurants-internationaux">
+   <div class="row d-flex justify-content-center">
+    <h1 style="margin-top: 20px">Les réstaurants à l'international</h1>
+    <div class="restaurants-internationaux col-lg-10 col-md-10">
+      <div class="pays"><a href="#">Suice</a></div>
+      <div class="pays"><a href="#">Belgique</a></div>
+      <div class="pays"><a href="#">Espagne</a></div>
+      <div class="pays"><a href="#">Pays-Bas</a></div>
+      <div class="pays"><a href="#">Italie</a></div>
+      <div class="pays"><a href="#">Suède</a></div>
+      <div class="pays"><a href="#">Danemark</a></div>
+      <div class="pays"><a href="#">Portugal</a></div>
+      <div class="pays"><a href="#">Brésil</a></div>
+    </div>
+  </div>
+</div>
