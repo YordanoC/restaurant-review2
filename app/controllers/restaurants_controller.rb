@@ -10,7 +10,7 @@ class RestaurantsController < ApplicationController
           lat: restaurant.latitude,
           lng: restaurant.longitude,
           infoWindow: render_to_string(partial: "infoWindow", locals: { restaurant: restaurant }),
-          image_url: helpers.asset_url("https://vertoubasket.fr/assets/front/img/marker.png")
+          image_url: helpers.asset_url("https://www.w3organic.fr/themes/wistt/assets/icons/marker.png")
       }
         end
       end
@@ -24,7 +24,7 @@ class RestaurantsController < ApplicationController
         lat: restaurant.latitude,
         lng: restaurant.longitude,
         infoWindow: render_to_string(partial: "infoWindow", locals: { restaurant: restaurant }),
-        image_url: helpers.asset_url("https://vertoubasket.fr/assets/front/img/marker.png")
+        image_url: helpers.asset_url("https://www.w3organic.fr/themes/wistt/assets/icons/marker.png")
       }
     end
   end
