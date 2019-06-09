@@ -1,21 +1,46 @@
-<div class="container">
-  <div class="row ">
-    <div class="col-lg-8 col-md-6 d-flex justify-content-center">
-      <div>
-      <div class="row justify-content-around m-3">
-        <div class="col-lg-4 col-md-4">
-          <h1><%= @restaurant.name %></h1>
+ <body></body>
+  <div class="container" style="min-height: 80vh">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 ml-5" >
+        <div class="d-flex justify-content-between">
+          <div style="background: red;width: 100%;min-height:100vh">
+            <span class="stars2">
+            <% empty_stars = 5 - @restaurant.stars %>
+            <% @restaurant.stars.times do %>
+              <span class="fas fa-star"></span>
+            <% end %>
+            <% empty_stars.times do %>
+              <span class="far fa-star"></span>
+            <% end %>
+          </span>
+          <h1 class="pt-5 pl-5"><%= @restaurant.name %> </h1>
+          <p class="pl-5"><%= @restaurant.address %> <a href="#"><strong>PLAN</strong></a> </p>
+          <p class="pl-5">Prix moyen: <%= @restaurant.price_avg%>€</p>
+          <%= image_tag @restaurant.photo,class: "pl-2" %>
+          <%= render "shared/tab" %>
+
         </div>
-        <div class="col-lg-2 col-md-2">
-          <h1><%=@restaurant.stars %><small>/5</small></h1>
         </div>
       </div>
-        <p><%= @restaurant.country %></p>
-        <p><%= @restaurant.city %></p>
-        <p> <%= @restaurant.address %></p>
-        <%= image_tag @restaurant.photo, alt: "@restaurant.name", width: 200 %>
-        <%= link_to "Retour",restaurants_path %>
+      <div class="col-lg-4 col-md-4 mr-2">
+        <div style="background: blue;width: 100%;min-height:100vh">
+
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <script>
+function onTabClick(event) {
+  let activeTabs = document.querySelectorAll('.active');
+  activeTabs.forEach((tab) => {
+tab.className = tab.className.replace('active', '');
+  });
+  event.target.parentElement.className += ' active';
+  document.getElementById(event.target.href.split('#')[1]).className += ' active';
+}
+const element= document.getElementById('nav-tab');
+element.addEventListener('click', onTabClick, false);
+  </script>
+</body>
+
+
