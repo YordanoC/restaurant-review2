@@ -8,4 +8,14 @@
 <div class="tab-pane p-2" id="description"> <%= @restaurant.description %> </div>
 <div class="tab-pane p-2" id="avis">Avis</div>
 </div>
+<script>function onTabClick(event) {
+  let activeTabs = document.querySelectorAll('.active');
+  activeTabs.forEach((tab) => {
+tab.className = tab.className.replace('active', '');
+  });
+  event.target.parentElement.className += ' active';
+  document.getElementById(event.target.href.split('#')[1]).className += ' active';
+}
+const element= document.getElementById('nav-tab');
+element.addEventListener('click', onTabClick, false);</script>
 
