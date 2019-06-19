@@ -1,0 +1,18 @@
+<div class = "notification">
+
+<% if review.user.avatar.blank? %>
+          <%= image_tag "https://www.weekend-esprithautsdefrance.com/sites/picardiev3/themes/picardiev3/img_v2/user-default.jpg", class: "avatar-large" %>
+          <% else %>
+          <%= cl_image_tag review.user.avatar, class: "avatar-large"%>
+          <% end %>
+          <div class="notification-content">
+  <p class="comment-content-description"> <strong> <%= review.user.user_name %></strong>
+   <% d = review.created_at %> <small><%= d.strftime("%-d/%b/%Y") %></small>
+   <br>
+      </p>
+  <p class="review-content"><%= review.content %></p>
+</div>
+</div>
+
+
+

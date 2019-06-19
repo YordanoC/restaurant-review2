@@ -25,10 +25,7 @@
 }
   .button-visit{
   width: 100%;
-  background: $green;
-  text-align: center;
-  font-size:17px;
-  font-weight:bold;
+height: 100%
 }
 a{
   color:white;
@@ -78,11 +75,10 @@ h2{
 .stars{
 position:absolute;
 padding-top:0px;
-height:16px;
-width:80px;
+background:white;
 right:7px;
-background: black;
-color:yellow;
+border:2px solid $green;
+color:$green;
 font-size:12px;
 }
 

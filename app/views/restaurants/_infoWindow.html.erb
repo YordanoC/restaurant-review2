@@ -1,4 +1,5 @@
 <%= image_tag restaurant.photo,class: "img-marker" %>
 <strong><%= restaurant.name %></strong><br>
 price: <%= restaurant.price_avg %>€<br>
-adresse: <%= restaurant.address %>
+adresse: <%= restaurant.address %><br>
+<strong><%= link_to "visit",restaurant_path(restaurant),class: "btn btn-success" %></strong><br>

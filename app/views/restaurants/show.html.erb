@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-7 col-md-7 ml-5" >
         <div class="d-flex justify-content-between">
-          <div style="background: red;width: 100%;min-height:100vh">
+          <div style="width: 100%;min-height:100vh">
             <span class="stars2">
             <% empty_stars = 5 - @restaurant.stars %>
             <% @restaurant.stars.times do %>
@@ -13,21 +13,24 @@
               <span class="far fa-star"></span>
             <% end %>
           </span>
-          <h1 class="pt-5 pl-5"><%= @restaurant.name %> </h1>
-          <p class="pl-5"><%= @restaurant.address %> <a href="#"><strong>PLAN</strong></a> </p>
-          <p class="pl-5">Prix moyen: <%= @restaurant.price_avg%>€</p>
+          <h1 class="pt-5 pl-3"><%= @restaurant.name %> </h1>
+          <p class="pl-3"><%= @restaurant.address %> <a href="#"><strong>PLAN</strong></a> </p>
+          <p class="pl-3">Prix moyen: <%= @restaurant.price_avg%>€</p>
           <%= image_tag @restaurant.photo,class: "pl-2" %>
-          <%= render "shared/tab" %>
-
+          <div>
+            <%= render "shared/tab" %>
+          </div>
         </div>
         </div>
       </div>
+    </div>
       <div class="col-lg-4 col-md-4 mr-2">
-        <div style="background: blue;width: 100%;min-height:100vh">
+        <div style="width: 100%;min-height:100vh">
 
         </div>
       </div>
     </div>
+            <%= link_to "retour", restaurants_path,class: "color-black" %>
   </div>
   <script>
 function onTabClick(event) {

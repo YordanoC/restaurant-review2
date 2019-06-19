@@ -9,6 +9,7 @@
 <div class="row d-flex justify-content-center">
   <% @restaurants.each do |restaurant| %>
     <div class="col-lg-3 col-md-3 card m-2 p-2">
+    <%= link_to restaurant_path(restaurant),class: "button-visit-index" do %>
       <span class="stars">
         <% empty_stars = 5 - restaurant.stars %>
       <% restaurant.stars.times do %>
@@ -19,12 +20,13 @@
       <% end %>
     </span>
     <%= image_tag restaurant.photo,class: "photo-show", alt: "restaurant.name" %>
+    <% end %>
     <h2 class="justify-self-end"> <%= restaurant.name.capitalize %></h2>
     <p class="price-avg"><%= restaurant.price_avg %>€</p>
     <div>
     </div>
     <p>Prix moy.</p>
-    <%= link_to "Visit",restaurant_path(restaurant),class: "button-visit" %>
+
   </div>
   <% end %>
 </div>

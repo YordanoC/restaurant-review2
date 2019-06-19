@@ -10,7 +10,7 @@ class RestaurantsController < ApplicationController
           lat: restaurant.latitude,
           lng: restaurant.longitude,
           infoWindow: render_to_string(partial: "infoWindow", locals: { restaurant: restaurant }),
-          image_url: helpers.asset_url("https://www.w3organic.fr/themes/wistt/assets/icons/marker.png")
+          image_url: helpers.asset_url("http://emassi.fr/wp-content/uploads/2017/10/Map-Marker-PNG-File.png")
       }
         end
       end
@@ -24,7 +24,7 @@ class RestaurantsController < ApplicationController
         lat: restaurant.latitude,
         lng: restaurant.longitude,
         infoWindow: render_to_string(partial: "infoWindow", locals: { restaurant: restaurant }),
-        image_url: helpers.asset_url("https://www.w3organic.fr/themes/wistt/assets/icons/marker.png")
+        image_url: helpers.asset_url("http://emassi.fr/wp-content/uploads/2017/10/Map-Marker-PNG-File.png")
       }
     end
   end
@@ -33,5 +33,6 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    @review = Review.new
   end
 end
